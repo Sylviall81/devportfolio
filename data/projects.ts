@@ -24,8 +24,8 @@ export const projects: Project[] = [
     },
     {
       id: "2",
-      title: "Start Up site",
-      description: "Sitio web responsive para una tienda online con carrito de compras y pasarela de pagos.",
+      title: "Start-Up site",
+      description: "Landing Page Responsive para una start-up ficticia de desarrolladores.Primer Proyecto del Bootcamp Femcoders como aproximación al aprendizaje HTML, CSS y JavaScript Basico",
       image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741190725/portfolio/projects_imgs/StartUpSiteImage1.jpg",
       tags: ["HTML", "CSS", "JavaScript", "Atomic Design"],
       liveLink: "https://start-up-site-five.vercel.app/index.html",
