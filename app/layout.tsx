@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Portfolio personal de desarrollo web",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
       { url: "/icon.png", sizes: "192x192" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
