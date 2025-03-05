@@ -27,7 +27,7 @@ export const projects: Project[] = [
       title: "Start Up site",
       description: "Sitio web responsive para una tienda online con carrito de compras y pasarela de pagos.",
       image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741190725/portfolio/projects_imgs/StartUpSiteImage1.jpg",
-      tags: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript", "Atomic Design"],
       liveLink: "https://start-up-site-five.vercel.app/index.html",
       githubLink: "https://github.com/Sylviall81/start-up-site",
     },
@@ -67,7 +67,7 @@ export const projects: Project[] = [
 `,
      
       image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741197400/portfolio/projects_imgs/Captura_de_Pantalla_2025-03-05_a_la_s_6.55.28_p._m._qckn1q.jpg",
-      tags: ["HTML", "CSS", "GitHub Pages", "Responsive Design", "API"],
+      tags: ["HTML", "CSS", "Javascript","GitHub Pages", "Responsive", "API"],
       liveLink: "https://factic.vercel.app/",
       githubLink: "https://github.com/Sylviall81/factic",
     },
