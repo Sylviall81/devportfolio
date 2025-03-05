@@ -52,6 +52,8 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
             {/* Imagen del proyecto */}
             <div className="rounded-lg overflow-hidden mb-8 border border-teal-100">
+            <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                 
               <Image
                 width="500"
                 height="300"
@@ -59,6 +61,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                 alt={project.title}
                 className="w-full h-auto object-cover"
               />
+              </Link>
             </div>
 
             {/* Etiquetas */}
