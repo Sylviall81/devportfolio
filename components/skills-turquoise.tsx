@@ -17,7 +17,7 @@ export default function Skills() {
     {
       icon: <PenTool className="h-8 w-8 text-teal-600" />,
       title: "Diseño UI/UX",
-      description: "Diseño Responsive, Accesibilidad",
+      description: "Atomic Design, Figma, Responsive, Accesibilidad",
     },
     {
       icon: <ClipboardCheck className="h-8 w-8 text-teal-600" />,
