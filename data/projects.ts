@@ -87,7 +87,7 @@ export const projects: Project[] = [
       title: "JavaScript To-Do List",
       description:
         "El clasico proyecto de To-Do List con JavaScript Vanilla en que se pueden agregar items a una lista, tachar y borrar.Incluye persistencia de datos con con localStorage",
-      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741220175/ToDoListJS.jpg",
+      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741264102/portfolio/projects_imgs/Captura_desde_2025-03-06_13-22-44_swozjk.png",
       tags: ["HTML", "CSS","JavaScript", "GitHub Pages"],
       liveLink: "https://sylviall81.github.io/vanilla-js-to-do-app/",
       githubLink: "https://github.com/Sylviall81/vanilla-js-to-do-app",
