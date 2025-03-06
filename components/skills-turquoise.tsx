@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, PenTool, Server, ClipboardCheck } from "lucide-react"
+import { Code, PenTool, Server, ClipboardCheck, Terminal, Wrench } from "lucide-react"
 //import { CheckCircleIcon, BugIcon } from '@heroicons/react/outline';
 
 export default function Skills() {
@@ -7,7 +7,7 @@ export default function Skills() {
     {
       icon: <Code className="h-8 w-8 text-teal-600" />,
       title: "Desarrollo Frontend",
-      description: "HTML, CSS, JavaScript, React",
+      description: "React, Next JS, Javascript, Tailwind ",
     },
     {
       icon: <Server className="h-8 w-8 text-teal-600" />,
@@ -15,15 +15,28 @@ export default function Skills() {
       description: "PHP, Laravel, Node.js, SQL, APIs RESTful",
     },
     {
-      icon: <PenTool className="h-8 w-8 text-teal-600" />,
-      title: "Diseño UI/UX",
-      description: "Atomic Design, Figma, Responsive, Accesibilidad",
+      icon: <Wrench className="h-8 w-8 text-teal-600" />,
+      title: "Tools",
+      description: "VS Code, GitHub, Postman, Vercel" 
     },
     {
       icon: <ClipboardCheck className="h-8 w-8 text-teal-600" />,
       title: "Herramientas QA",
-      description: "Playwright, TestRail, Postman, API Testing",
+      description: "Playwright, TestRail, Jest, phpUnit, API Testing",
     },
+    {
+      icon: <Terminal className="h-8 w-8 text-teal-600" />,
+      title: "DevOps",
+      description: "Git, Linux, Docker",
+    },
+   
+    {
+      icon: <PenTool className="h-8 w-8 text-teal-600" />,
+      title: "Diseño UX/UI",
+      description: "Figma, Atomic Design, Responsive, Accesibilidad" 
+    }
+    
+    
   ]
 
   return (
