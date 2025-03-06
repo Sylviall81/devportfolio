@@ -81,6 +81,17 @@ export const projects: Project[] = [
       liveLink: "https://sylviall81.github.io/myJsNotebook/",
       githubLink: "https://github.com/Sylviall81/myJsNotebook/",
     },
+    
+    {
+      id: "7",
+      title: "JavaScript To-Do List",
+      description:
+        "El clasico proyecto del To-Do List con JavaScript Vanilla en que se pueden agregar items a una lista, tachar y borrar.Incluye persistencia de datos con con localStorage",
+      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741119502/portfolio/projects_imgs/JsNotebook3.jpg",
+      tags: ["HTML", "CSS","JavaScript", "GitHub Pages"],
+      liveLink: "https://github.com/Sylviall81/vanilla-js-to-do-app/deployments/github-pages",
+      githubLink: "https://github.com/Sylviall81/vanilla-js-to-do-app",
+    },
 
    
   ]
