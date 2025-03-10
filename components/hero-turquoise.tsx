@@ -16,7 +16,7 @@ export default function Hero() {
                 Hola, soy <span className="text-teal-600"> Sylvia</span>
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Desarrolladora Full-stack Jr. entusiasta del aprendizaje y la innovacion enfocada en crear soluciones digitales funcionales y atractivas.
+                Desarrolladora Full-stack Jr. y QA Tester entusiasta del aprendizaje y la innovacion enfocada en crear soluciones digitales funcionales y atractivas.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">

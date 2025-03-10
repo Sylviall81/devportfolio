@@ -19,7 +19,7 @@ export default function Footer({ accentColor }: FooterProps) {
               <span className={`text-xl font-bold ${textAccentClass}`}>Sylvia Llorente - Full Stack Dev</span>
             </Link>
             <p className="mt-2 text-sm text-gray-500">
-            Desarrolladora Full-stack Jr. entusiasta del aprendizaje y la innovacion enfocada en crear soluciones digitales funcionales y atractivas.</p>
+            Desarrolladora Full-stack Jr. y QA Tester entusiasta del aprendizaje y la innovacion enfocada en crear soluciones digitales funcionales y atractivas.</p>
           </div>
           <div className="flex space-x-4">
             <Link
