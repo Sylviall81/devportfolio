@@ -50,17 +50,21 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             {/* Título del proyecto */}
             <h1 className="text-3xl md:text-4xl font-bold mb-6">{project.title}</h1>
 
-            {/* Imagen del proyecto */}
-            <div className="rounded-lg overflow-hidden mb-8 border border-teal-100">
+            {/* Imagen del proyecto 
+            <div className="rounded-lg overflow-hidden mb-8 border border-teal-100"> */}
+            <div style={{ width: '500px', aspectRatio: '16/9', borderRadius: '20px', overflow: 'hidden', }} className="mb-4">
             <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                 
-              <Image
-                width="500"
-                height="300"
+
+            <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
-                className="w-full h-auto object-cover"
+                width={400}
+                height={500 * (9 / 16)} // Mantener la proporción de 16:9
+                className="object-cover"
+                style={{ borderRadius: '20px' }}
               />
+                 
+
               </Link>
             </div>
 
@@ -86,13 +90,13 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
               <Button asChild className="bg-teal-600 text-white hover:bg-teal-700">
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  Ver demo en vivo
+                  Live Demo
                 </Link>
               </Button>
               <Button asChild variant="outline" className="border-teal-200 text-teal-600 hover:bg-teal-50">
                 <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4 mr-2" />
-                  Ver código fuente
+                  Ver Repositorio
                 </Link>
               </Button>
             </div>
