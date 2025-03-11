@@ -38,6 +38,8 @@ export const metadata: Metadata = {
     description: "Portfolio personal de desarrollo web",
     url: "https://sllorentedev.vercel.app/",
     siteName: "Sylvia Llorente Portfolio",
+    //fb:"app_id": "TU_APP_ID_AQUÍ",
+    
     images: [
       {
         url: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741702164/portfolio/portfolioSN_fpf4db.jpg", // Imagen para compartir en redes
@@ -47,6 +49,7 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+   
   },
 }
 
