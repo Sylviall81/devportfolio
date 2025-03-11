@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     
     images: [
       {
-        url: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741702164/portfolio/portfolioSN_fpf4db.jpg", // Imagen para compartir en redes
+        url: "/portfolioSN.jpg", // Imagen para compartir en redes
         width: 1200,
         height: 630,
         alt: "Preview de Sylvia Llorente Portfolio",
