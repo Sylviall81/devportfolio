@@ -16,6 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Sylvia Llorente | Portfolio",
   description: "Portfolio personal de desarrollo web",
+  keywords: "Desarrollo web, React.js, PHP, Portfolio personal",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32" },
