@@ -1,4 +1,4 @@
- 
+
 export interface Project {
     id: string;
     title: string;
@@ -10,8 +10,49 @@ export interface Project {
 
   }
 
+// El orden del array es el orden de visualización. Los proyectos nuevos van al principio.
+// El id es solo un identificador único, no controla el orden.
 export const projects: Project[] = [
-  
+
+    {
+      id: "12",
+      title: "Astrokaleido — Plataforma de Astrología Headless",
+      description: `<p>Plataforma e-commerce completa para una marca de astrología, construida con arquitectura <strong>headless</strong>: WordPress + WooCommerce actúan como CMS y backend de inventario, mientras <strong>Next.js (App Router)</strong> sirve el frontend con SSR y rutas de API propias.</p></br>
+<h4>🛒 E-commerce y Pagos</h4>
+<ul>
+  <li>Carrito persistente (Context API + localStorage) con soporte para productos simples y variables de WooCommerce</li>
+  <li>Checkout con <strong>Stripe Checkout Sessions</strong> (EUR), flujo completo con páginas de éxito y cancelación</li>
+  <li>Webhook de Stripe con verificación HMAC: ramifica automáticamente entre servicio o infoproducto post-pago</li>
+  <li>Creación automática de pedidos en WooCommerce tras cada pago exitoso (sincronización bidireccional)</li>
+</ul></br>
+<h4>📥 Descarga de Productos Digitales</h4>
+<ul>
+  <li>URLs firmadas con HMAC-SHA256 y TTL de 7 días — los links caducan y no pueden manipularse</li>
+  <li>Proxy de descarga propio (<code>/api/download</code>) que sirve el archivo sin exponer la URL original de WooCommerce</li>
+</ul></br>
+<h4>📧 Emails Transaccionales con Resend</h4>
+<ul>
+  <li>Email al cliente diferenciado: link de descarga (infoproducto) o confirmación de sesión (servicio)</li>
+  <li>Notificación interna automática al vendedor con resumen de cada venta</li>
+  <li>Confirmación de reserva automática vía webhook de cal.com con fecha, hora y detalles de la sesión</li>
+  <li>Formulario de contacto y newsletter con validación GDPR, guardando contactos en audiencia de Resend</li>
+</ul></br>
+<h4>📅 Booking</h4>
+<ul>
+  <li>Integración de <strong>cal.com embed</strong> dinámico; el link de cal se configura por producto en la meta_data de WooCommerce, sin tocar código</li>
+</ul></br>
+<h4>📝 Blog y SEO</h4>
+<ul>
+  <li>Posts vía WordPress REST API con table of contents automático, share buttons y Open Graph por post</li>
+  <li>sitemap.xml y robots.txt generados dinámicamente, meta tags con next-seo</li>
+  <li>Dark/light mode con next-themes</li>
+</ul>`,
+      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536442/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-09-39_efpla8.png",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "WooCommerce", "Stripe", "WordPress REST API", "Headless CMS"],
+      liveLink: "https://astrokaleido.com",
+      githubLink: "https://github.com/Sylviall81/astrok_web",
+    },
+
     {
       id: "1",
       title: "The Bookclub",
@@ -55,8 +96,8 @@ export const projects: Project[] = [
       id: "5",
       title: "Factic - Useless Facts",
       description:`
-  Factic es una aplicación web que devuelve hechos curiosos que no necesitas. En esta aplicación, utilizamos la 
-  <a href='https://uselessfacts.jsph.pl/' target='_blank' rel='noopener noreferrer'>API Useless Facts</a> 
+  Factic es una aplicación web que devuelve hechos curiosos que no necesitas. En esta aplicación, utilizamos la
+  <a href='https://uselessfacts.jsph.pl/' target='_blank' rel='noopener noreferrer'>API Useless Facts</a>
   para obtener los datos de hechos curiosos de forma aleatoria. La aplicación además cuenta con las siguientes funcionalidades:
   <ul>
     <li>Obtiene hechos curiosos de la API de Useless Facts y los muestra en la página principal.</li>
@@ -65,7 +106,7 @@ export const projects: Project[] = [
     <li>...Y si activas el sonido disfrutarás de la parte más divertida.</li>
   </ul>
 `,
-     
+
       image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741197400/portfolio/projects_imgs/Captura_de_Pantalla_2025-03-05_a_la_s_6.55.28_p._m._qckn1q.jpg",
       tags: ["HTML", "CSS", "Javascript","GitHub Pages", "Responsive", "API"],
       liveLink: "https://factic.vercel.app/",
@@ -81,7 +122,7 @@ export const projects: Project[] = [
       liveLink: "https://sylviall81.github.io/myJsNotebook/",
       githubLink: "https://github.com/Sylviall81/myJsNotebook/",
     },
-    
+
     {
       id: "7",
       title: "JavaScript To-Do List",
@@ -125,45 +166,6 @@ export const projects: Project[] = [
       githubLink: "https://www.dropbox.com/scl/fi/f59uhk2m4kisfucu73k5n/TestPlan_Oct24.pdf?rlkey=ysfxh51cp0vadqzr4mg3fgnt5&st=t9dd1jmr&dl=0",
     },
     {
-      id: "12",
-      title: "Astrokaleido — Plataforma de Astrología Headless",
-      description: `<p>Plataforma e-commerce completa para una marca de astrología, construida con arquitectura <strong>headless</strong>: WordPress + WooCommerce actúan como CMS y backend de inventario, mientras <strong>Next.js (App Router)</strong> sirve el frontend con SSR y rutas de API propias.</p></br>
-<h4>🛒 E-commerce y Pagos</h4>
-<ul>
-  <li>Carrito persistente (Context API + localStorage) con soporte para productos simples y variables de WooCommerce</li>
-  <li>Checkout con <strong>Stripe Checkout Sessions</strong> (EUR), flujo completo con páginas de éxito y cancelación</li>
-  <li>Webhook de Stripe con verificación HMAC: ramifica automáticamente entre servicio o infoproducto post-pago</li>
-  <li>Creación automática de pedidos en WooCommerce tras cada pago exitoso (sincronización bidireccional)</li>
-</ul></br>
-<h4>📥 Descarga de Productos Digitales</h4>
-<ul>
-  <li>URLs firmadas con HMAC-SHA256 y TTL de 7 días — los links caducan y no pueden manipularse</li>
-  <li>Proxy de descarga propio (<code>/api/download</code>) que sirve el archivo sin exponer la URL original de WooCommerce</li>
-</ul></br>
-<h4>📧 Emails Transaccionales con Resend</h4>
-<ul>
-  <li>Email al cliente diferenciado: link de descarga (infoproducto) o confirmación de sesión (servicio)</li>
-  <li>Notificación interna automática al vendedor con resumen de cada venta</li>
-  <li>Confirmación de reserva automática vía webhook de cal.com con fecha, hora y detalles de la sesión</li>
-  <li>Formulario de contacto y newsletter con validación GDPR, guardando contactos en audiencia de Resend</li>
-</ul></br>
-<h4>📅 Booking</h4>
-<ul>
-  <li>Integración de <strong>cal.com embed</strong> dinámico; el link de cal se configura por producto en la meta_data de WooCommerce, sin tocar código</li>
-</ul></br>
-<h4>📝 Blog y SEO</h4>
-<ul>
-  <li>Posts vía WordPress REST API con table of contents automático, share buttons y Open Graph por post</li>
-  <li>sitemap.xml y robots.txt generados dinámicamente, meta tags con next-seo</li>
-  <li>Dark/light mode con next-themes</li>
-</ul>`,
-      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536442/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-09-39_efpla8.png",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "WooCommerce", "Stripe", "WordPress REST API", "Headless CMS"],
-      liveLink: "https://astrokaleido.com",
-      githubLink: "https://github.com/Sylviall81/astrok_web",
-    },
-
-    {
       id: "11",
       title: "📊 Introducción a Pruebas E2E con Playwright",
       description:
@@ -175,5 +177,5 @@ export const projects: Project[] = [
     }
 
 
-   
+
   ]
