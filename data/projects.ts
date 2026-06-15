@@ -4,6 +4,7 @@ export interface Project {
     title: string;
     description: string;
     image: string;
+    images?: string[];
     tags: string[];
     liveLink: string;
     githubLink: string;
@@ -48,6 +49,15 @@ export const projects: Project[] = [
   <li>Dark/light mode con next-themes</li>
 </ul>`,
       image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536442/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-09-39_efpla8.png",
+      images: [
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536442/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-09-39_efpla8.png",
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536443/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-10-52_mae8ly.png",
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536442/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-10-45_ilxx4a.png",
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536443/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-11-05_uvunzd.png",
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536444/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-12-05_batsxy.png",
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536443/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-11-23_bpvzek.png",
+        "https://res.cloudinary.com/dsesprxhl/image/upload/v1781536442/portfolio/projects_imgs/astrokaleido/Captura_desde_2026-06-15_17-10-05_nwnvws.png",
+      ],
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "WooCommerce", "Stripe", "WordPress REST API", "Headless CMS"],
       liveLink: "https://astrokaleido.com",
       githubLink: "https://github.com/Sylviall81/astrok_web",

@@ -1,6 +1,7 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -50,23 +51,41 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             {/* Título del proyecto */}
             <h1 className="text-3xl md:text-4xl font-bold mb-6">{project.title}</h1>
 
-            {/* Imagen del proyecto 
-            <div className="rounded-lg overflow-hidden mb-8 border border-teal-100"> */}
-            <div style={{ width: '500px', aspectRatio: '16/9', borderRadius: '20px', overflow: 'hidden', }} className="mb-4">
-            <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-
-            <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                width={400}
-                height={500 * (9 / 16)} // Mantener la proporción de 16:9
-                className="object-cover"
-                style={{ borderRadius: '20px' }}
-              />
-                 
-
-              </Link>
-            </div>
+            {/* Imagen / Carrusel del proyecto */}
+            {project.images && project.images.length > 1 ? (
+              <Carousel className="w-full max-w-2xl mb-8">
+                <CarouselContent>
+                  {project.images.map((src, i) => (
+                    <CarouselItem key={i}>
+                      <div className="aspect-video w-full overflow-hidden rounded-xl">
+                        <Image
+                          src={src}
+                          alt={`${project.title} — captura ${i + 1}`}
+                          width={800}
+                          height={450}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            ) : (
+              <div style={{ width: '500px', aspectRatio: '16/9', borderRadius: '20px', overflow: 'hidden' }} className="mb-4">
+                <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    width={400}
+                    height={225}
+                    className="object-cover"
+                    style={{ borderRadius: '20px' }}
+                  />
+                </Link>
+              </div>
+            )}
 
             {/* Etiquetas */}
             <div className="flex flex-wrap gap-2 mb-6">
