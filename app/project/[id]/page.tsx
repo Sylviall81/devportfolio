@@ -73,15 +73,14 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                 <CarouselNext />
               </Carousel>
             ) : (
-              <div style={{ width: '500px', aspectRatio: '16/9', borderRadius: '20px', overflow: 'hidden' }} className="mb-4">
+              <div className="w-full max-w-2xl aspect-video rounded-xl overflow-hidden mb-8">
                 <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    width={400}
-                    height={225}
-                    className="object-cover"
-                    style={{ borderRadius: '20px' }}
+                    width={800}
+                    height={450}
+                    className="w-full h-full object-cover"
                   />
                 </Link>
               </div>
