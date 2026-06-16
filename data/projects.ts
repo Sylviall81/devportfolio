@@ -98,7 +98,7 @@ export const projects: Project[] = [
   <li>Estructura modular: <code>lib/</code> (lógica BD), <code>includes/</code> (partials), <code>pages/</code> (vistas), <code>config/</code> (conexión)</li>
   <li>Migrado de Clever Cloud a <strong>InfinityFree</strong> con ajuste de <code>.htaccess</code> y <code>BASE_URL</code> dinámica en <code>config.php</code></li>
 </ul></br>
-<p>🔑 <strong>Demo:</strong> <code>usuarioprueba2026@fakemail.com</code> / <code>usuarioprueba2026</code> &nbsp;·&nbsp; <a href="https://www.dropbox.com/scl/fi/sna2xyikwvnywk35mw91l/Diplomas_PHP01-Sylvia-Llorente.pdf" target="_blank" rel="noopener noreferrer">Ver certificado CodeOp</a></p>`,
+<p>🔑 <strong>Demo:</strong> <code>usuarioprueba2026@fakemail.com</code> / <code>usuarioprueba2026</code></p>`,
       image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1781617470/portfolio/projects_imgs/bookclub/Home.png",
       tags: ["PHP", "MySQL", "PDO", "jQuery", "Font Awesome 6", "InfinityFree"],
       category: "dev",
