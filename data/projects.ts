@@ -68,12 +68,41 @@ export const projects: Project[] = [
     {
       id: "1",
       title: "The Bookclub",
-      description:
-        "Blog Literario donde los usuarios crear, eliminar y actualizar reseñas de libros, incluye autenticación de usuarios, dashboard personal y marcar post como favoritos",
-      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1741609129/portfolio/projects_imgs/BookClub8.png",
-      tags: ["PHP", "MySQL", "Clever Cloud"],
+      description: `<p>Blog comunitario de reseñas y artículos sobre libros, construido desde cero con <strong>PHP nativo</strong> y <strong>MySQL</strong> como proyecto final del curso de PHP de 40h en CodeOp.</p></br>
+<h4>🔐 Autenticación y Usuarios</h4>
+<ul>
+  <li>Registro con validación multicapa (servidor + regex con soporte de tildes y ñ), login/logout con sesiones PHP y contraseñas hasheadas con <strong>bcrypt</strong></li>
+  <li>Header dinámico: detecta sesión activa y muestra nombre de usuario + acceso al dashboard, o Login si no hay sesión</li>
+  <li>Botón mostrar/ocultar contraseña en el formulario de registro</li>
+</ul></br>
+<h4>📝 Posts y Favoritos</h4>
+<ul>
+  <li>CRUD completo de publicaciones con autorización por autor — un usuario no puede eliminar posts ajenos aunque manipule la URL</li>
+  <li>Sistema de favoritos con toggle (icono corazón lleno/vacío con Font Awesome 6) persistido en base de datos</li>
+  <li>Confirmación JS antes de borrar como barrera extra de UX</li>
+</ul></br>
+<h4>📊 Dashboard Personal</h4>
+<ul>
+  <li>Tabla de "Mis publicaciones" con thumbnail de portada (60×60 px), título, fecha formateada y botones Ver / Borrar</li>
+  <li>Estado vacío con mensaje amigable y enlace directo al formulario de creación</li>
+  <li>Errores de borrado mostrados en zona visible del dashboard, no en página aparte</li>
+</ul></br>
+<h4>🛡️ Seguridad</h4>
+<ul>
+  <li><strong>PDO con prepared statements</strong> en todas las consultas — sin concatenación de SQL</li>
+  <li><code>htmlspecialchars()</code> en todos los outputs para prevenir XSS</li>
+  <li>Verificación de <code>user_id</code> antes de borrar: compara el autor del post con la sesión activa</li>
+</ul></br>
+<h4>🏗️ Arquitectura y Deploy</h4>
+<ul>
+  <li>Estructura modular: <code>lib/</code> (lógica BD), <code>includes/</code> (partials), <code>pages/</code> (vistas), <code>config/</code> (conexión)</li>
+  <li>Migrado de Clever Cloud a <strong>InfinityFree</strong> con ajuste de <code>.htaccess</code> y <code>BASE_URL</code> dinámica en <code>config.php</code></li>
+</ul></br>
+<p>🔑 <strong>Demo:</strong> <code>usuarioprueba2026@fakemail.com</code> / <code>usuarioprueba2026</code> &nbsp;·&nbsp; <a href="https://www.dropbox.com/scl/fi/sna2xyikwvnywk35mw91l/Diplomas_PHP01-Sylvia-Llorente.pdf" target="_blank" rel="noopener noreferrer">Ver certificado CodeOp</a></p>`,
+      image: "https://res.cloudinary.com/dsesprxhl/image/upload/v1781617470/portfolio/projects_imgs/bookclub/Home.png",
+      tags: ["PHP", "MySQL", "PDO", "jQuery", "Font Awesome 6", "InfinityFree"],
       category: "dev",
-      liveLink: "https://app-828c7e83-e0b0-41c5-855f-c3cf129aecf1.cleverapps.io/public/",
+      liveLink: "http://bookclub.freehosting.dev",
       githubLink: "https://github.com/Sylviall81/bookclub_php",
     },
     {
